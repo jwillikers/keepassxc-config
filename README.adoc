@@ -15,7 +15,7 @@ My settings for the {keepassxc} password manager.
 
 == Usage
 
-This repository contains the settings file for Stretchly.
+This repository contains the settings file for KeePassXC.
 This file is syncronized using this Git repository.
 The following instructions detail how to use and sync this repository.
 
@@ -33,7 +33,7 @@ _Flatpak_::
 +
 [source,sh]
 ----
-➜ wget -qiLO ~/.var/app/org.keepassxc.KeePassXC/config/keepassxc/keepassxc.ini \
+➜ wget -qLO ~/.var/app/org.keepassxc.KeePassXC/config/keepassxc/keepassxc.ini \
   https://raw.githubusercontent.com/jwillikers/keepassxc-settings/main/keepassxc.ini
 ----
 
@@ -41,7 +41,7 @@ _System Package_::
 +
 [source,sh]
 ----
-➜ wget -qiLO ~/.config/keepassxc/keepassxc.ini \
+➜ wget -qLO ~/.config/keepassxc/keepassxc.ini \
   https://raw.githubusercontent.com/jwillikers/keepassxc-settings/main/keepassxc.ini
 ----
 
@@ -87,7 +87,7 @@ To update the settings in this repository from an existing installation, follow 
 +
 [source,sh]
 ----
-➜ git -C ~/Projects clone git@github.com:jwillikers/stretchly-settings.git
+➜ git -C ~/Projects clone git@github.com:jwillikers/keepassxc-settings.git
 ----
 
 . Copy the `keepassxc.ini` file from the appropriate location to the Git repository.
