@@ -110,6 +110,27 @@ _System Package_::
 ----
 --
 
+. Stage the updated file.
++
+[source,sh]
+----
+➜ git add keepassxc.ini
+----
+
+. Commit.
++
+[source,sh]
+----
+➜ git commit -m "My even better configuration"
+----
+
+. Push the changes back to the central repository.
++
+[source,sh]
+----
+➜ git push
+----
+
 // todo Add instructions for using a merge tool to merge disparate settings files.
 
 == Code of Conduct
