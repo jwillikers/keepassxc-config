@@ -1,0 +1,130 @@
+= KeePassXC Settings
+Jordan Williams <jordan@jwillikers.com>
+:experimental:
+:icons: font
+ifdef::env-github[]
+:tip-caption: :bulb:
+:note-caption: :information_source:
+:important-caption: :heavy_exclamation_mark:
+:caution-caption: :fire:
+:warning-caption: :warning:
+endif::[]
+:keepassxc: https://keepassxc.org/[KeePassXC]
+
+My settings for the {keepassxc} password manager.
+
+== Usage
+
+This repository contains the settings file for Stretchly.
+This file is syncronized using this Git repository.
+The following instructions detail how to use and sync this repository.
+
+=== Install
+
+Install these settings with the following instructions.
+
+==== Direct Download
+
+The settings file can be installed directly from the GitHub to the appropriate destination.
+
+NOTE: Close KeePassXC before copying the settings file.
+
+_Flatpak_::
++
+[source,sh]
+----
+➜ wget -qiLO ~/.var/app/org.keepassxc.KeePassXC/config/keepassxc/keepassxc.ini \
+  https://raw.githubusercontent.com/jwillikers/keepassxc-settings/main/keepassxc.ini
+----
+
+_System Package_::
++
+[source,sh]
+----
+➜ wget -qiLO ~/.config/keepassxc/keepassxc.ini \
+  https://raw.githubusercontent.com/jwillikers/keepassxc-settings/main/keepassxc.ini
+----
+
+==== Git
+
+It also possible to use Git to retrieve the repository and copy the file from there.
+This is described by the following steps.
+
+. Clone this repository.
++
+[source,sh]
+----
+➜ git -C ~/Projects clone git@github.com:jwillikers/keepassxc-settings.git
+----
+
+. Copy the `keepassxc.ini` file to the appropriate location.
++
+--
+NOTE: Close KeePassXC before copying the settings file.
+
+_Flatpak_::
++
+[source,sh]
+----
+➜ cp ~/Projects/keepassxc-settings/keepassxc.ini \
+  ~/.var/app/org.keepassxc.KeePassXC/config/keepassxc/
+----
+
+_System Package_::
++
+[source,sh]
+----
+➜ cp ~/Projects/keepassxc-settings/keepassxc.ini \
+  ~/.config/keepassxc/
+----
+--
+
+=== Update
+
+To update the settings in this repository from an existing installation, follow these steps.
+
+. If you haven't already done so, clone this repository.
++
+[source,sh]
+----
+➜ git -C ~/Projects clone git@github.com:jwillikers/stretchly-settings.git
+----
+
+. Copy the `keepassxc.ini` file from the appropriate location to the Git repository.
++
+--
+_Flatpak_::
++
+[source,sh]
+----
+➜ cp ~/.var/app/org.keepassxc.KeePassXC/config/keepassxc/keepassxc.ini \
+  ~/Projects/keepassxc-settings/
+----
+
+_System Package_::
++
+[source,sh]
+----
+➜ cp ~/.config/keepassxc/keepassxc.ini \
+  ~/Projects/keepassxc-settings/
+----
+--
+
+// todo Add instructions for using a merge tool to merge disparate settings files.
+
+== Code of Conduct
+
+Please refer to the project's link:CODE_OF_CONDUCT.adoc[Code of Conduct].
+
+== License
+
+This repository is licensed under the https://www.gnu.org/licenses/gpl-3.0.html[GPLv3].
+Please refer to the bundled link:LICENSE.adoc[license].
+
+== Copyright
+
+© 2020 Jordan Williams
+
+== Authors
+
+mailto:{email}[{author}]
