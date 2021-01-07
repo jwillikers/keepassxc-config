@@ -114,21 +114,21 @@ _System Package_::
 +
 [source,sh]
 ----
-➜ git add keepassxc.ini
+➜ git -C ~/Projects/keepassxc-settings add keepassxc.ini
 ----
 
 . Commit.
 +
 [source,sh]
 ----
-➜ git commit -m "My even better configuration"
+➜ git -C ~/Projects/keepassxc-settings commit -m "My even better configuration"
 ----
 
 . Push the changes back to the central repository.
 +
 [source,sh]
 ----
-➜ git push
+➜ git -C ~/Projects/keepassxc-settings push
 ----
 
 // todo Add instructions for using a merge tool to merge disparate settings files.
